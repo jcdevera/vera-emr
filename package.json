@@ -1,23 +1,49 @@
 {
-  "name": "Vera-EMR",
+  "name": "vera-emr",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "NODE_ENV=production node server/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack serve --open & NODE_ENV=development nodemon server/server.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcdevera/vera-emr.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcdevera/vera-emr/issues"
+  },
+  "homepage": "https://github.com/jcdevera/vera-emr#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "moment": "^2.29.1",
     "mongoose": "^5.12.7",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "react-icons": "^4.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-table": "^7.7.0",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
