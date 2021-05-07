@@ -1,0 +1,235 @@
+
+
+@font-face {
+font-family:"century-gothic";
+src: 
+  url("https://use.typekit.net/af/afc5c6/00000000000000003b9b1f23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+  url("https://use.typekit.net/af/afc5c6/00000000000000003b9b1f23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
+  url("https://use.typekit.net/af/afc5c6/00000000000000003b9b1f23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+.tk-century-gothic { font-family: "century-gothic",sans-serif; }
+
+html {
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+}
+h2{
+ margin-left: 15%; 
+}
+
+h1{ 
+  text-align: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.mainlogo {
+  width: 300px;
+  height: 300px;
+}
+.create-patient{
+  display: flex;
+  flex-direction:column;
+  justify-content:baseline;
+  height: 100vh;
+  padding:0.2rem calc((100vw - 1000px) / 2);
+}
+.view-patient{
+  display: flex;
+  flex-direction:column;
+  justify-content:baseline;
+  height: 100vh;
+  padding:0.2rem calc((100vw - 1000px) / 2)
+}
+.inputfields{
+  display: inline-block;
+  float: left;
+  font-family: century-gothic;
+}
+.inputfields:focus {
+  outline: none !important;
+  border:1px solid grey;
+  box-shadow: 0 0 3px grey;
+}
+
+.createlabel{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#createnotes {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  height: 200px;
+  padding: 7px 7px 7px 7px;
+  font-family: century-gothic;
+  box-shadow: 0 0 3px grey;
+  border-radius: 15px !important;
+  outline: none;
+}
+
+#createnotes:focus {
+  outline: none !important;
+  border:1px solid grey;
+  box-shadow: 0 0 3px grey;
+}
+
+tr:hover{
+    background: lightslategray;
+}
+
+
+.notesinput{
+  display: inline-block;
+  float: left;
+  clear: left; 
+  width: 250px;
+  margin-left: 10px;
+  align-items: right;
+}
+.searchcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-self: auto;
+  margin-left: 15%
+}
+
+.search{
+  height: 25px;
+  width: 250px;
+ 
+  font-family: century-gothic, sans-serif;
+}
+.search:focus {
+  outline: none !important;
+  border:1px solid grey;
+  box-shadow: 0 0 3px grey;
+}
+
+.sides {
+  padding: 10px;
+  width: 15%;
+  top: 10px;
+  bottom: 0;
+  position: absolute;
+  background: grey
+  
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 60px
+}
+.btn-create-patient{
+  border-radius: 8px;
+  background: #5e6668;
+  padding: 10px 22px;
+  color: white;
+  outline: none;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.patientinfo-container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  /* background: lightgray; */
+}
+
+.patientInfo{
+  order: 0;  
+  width: 500px;
+  margin-left:100px;
+}
+
+.trow{
+  height:20px;
+}
+
+.tdata{
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.tlabel{
+  font-size: 18px;
+  font-weight:bolder;
+  text-align: right;
+  width:200px
+}
+
+.notescontainer{
+  width:500px;
+  
+}
+.noteentry{
+  margin-left: 40px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 3px grey;
+  border-radius: 15px !important;
+  font-size: 18px;
+  padding: 5px 5px;
+  width:500px;
+  height:250px;
+  position:relative;
+  
+}
+.deleteNote{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 8px;
+  background: lightgray;
+  padding: 10px 22px;
+  color: white;
+  outline: none;
+  width: 125px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;  
+}
+
+.deleteNote:hover{
+  background: lightcoral;
+}
+
+.newnote {
+  margin-left:100px;
+  margin-top:25px;
+}
+
+.btn-update-note{
+  top:250px;
+  right: 200px;
+  border-radius: 8px;
+  background: #5e6668;
+  padding: 10px 22px;
+  color: white;
+  outline: none;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  position:relative;
+  
+}
