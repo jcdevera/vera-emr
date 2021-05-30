@@ -1,2 +1,2 @@
 # vera-emr
-codesmith solo project
+solo project
